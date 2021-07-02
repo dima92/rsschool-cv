@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="469e8f8d-ce95-49dd-b245-cd6023b4abf2" name="Default Changelist" comment="feat: add CV ended" />
+    <list default="true" id="469e8f8d-ce95-49dd-b245-cd6023b4abf2" name="Default Changelist" comment="feat: add CV ended">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +68,8 @@
       <option name="presentableId" value="Default" />
       <updated>1625137779840</updated>
       <workItem from="1625137783083" duration="2622000" />
-      <workItem from="1625155852107" duration="16442000" />
+      <workItem from="1625155852107" duration="16621000" />
+      <workItem from="1625224558526" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add main information">
       <created>1625139371194</created>
