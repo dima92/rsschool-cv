@@ -76,7 +76,7 @@ ul li {
 .experience {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .skills ul:first-line {
