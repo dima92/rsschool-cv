@@ -1,127 +1,194 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>CV</title>
+  <link rel="icon" href="assets/pngegg.png">
+  <title>CV-Tkachenko Dmitry</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-<div class="flex-container">
-  <header class="flex-item item-1">
-    <h3>Dmitry Tkachenko</h3>
-  </header>
-  <main>
-    <aside class="flex-item item-2">
-      <img src="./assets/photo_2021-06-28_19-46-21.jpg" alt="Picture image photo" class="photo">
-      <div class="section__contact">
-        <p>Phone:<span> +375 44 763 83 44</span></p>
-        <p>Email:<span><a href="mailto:dima-tkachenko@mail.ru"> Email</a></span></p>
-        <p>VK:<span><a href="https://vk.com/zloy_developer41"> VK</a></span></p>
-        <p>Linkedin:<span><a href="https://www.linkedin.com/in/dima92/"> Linkedin</a></span></p>
-      </div>
-    </aside>
-    <section class="flex-item item-3">
-      <div class="summary">
-        Summary:
-        <p>
-          I started learning JavaScript in JS / Front-end and ReactJS (with TypeScript) courses at
-          The Rolling Scopes School, while at university I studied more .NET and Angular. Now I am
-          developing my own projects, and I am ready to further develop my knowledge and skills in
-          web development.
-        </p>
-      </div>
-      <div>Skills:
-        <div class="skills">
-          <ul>
-            <li>Languages:</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL(ORACLE)</li>
-            <li>Asp.Net</li>
-          </ul>
-          <ul>
-            <li>IDE:</li>
-            <li>Webstorm</li>
-            <li>Visual Studio</li>
-            <li>VS Code</li>
-          </ul>
-          <ul>
-            <li>Source Control:</li>
-            <li>Git</li>
-            <li>SVN</li>
-            <li>TeamCoherence</li>
-          </ul>
-          <ul>
-            <li>API/Frameworks:</li>
-            <li>Angular</li>
-            <li>Fetch</li>
-            <li>RESTful</li>
-            <li>Async Programming</li>
-          </ul>
-          <ul>
-            <li>OS:</li>
-            <li>Windows</li>
-          </ul>
-          <ul>
-            <li>English level:</li>
-            <li>Pre-Intermediate</li>
-          </ul>
-        </div>
-      </div>
-      <div>Education:
-        <div class="education">
-          <ul>
-            <li>July 2021 – present time – The Rolling Scopes School</li>
-            <li>September 2011 - June 2019 - Belarusian State University of Informatics and Radioelectronics</li>
-          </ul>
-        </div>
-      </div>
-      <div>Work experience:
-        <div class="experience">
-          <h4>
-            <span>July 2019 - April 2020 - Minsk Automobile Plant LLC</span><br>
-            <b>Project role:</b>
-            <span>Developer</span> <br>
-            <b>Project description:</b>
-            <span>Maintenance (support) of software</span> <br>
-          </h4>
-          <h4>
-            <span>April 2020 - July 2020 - ATLANT Inc.</span> <br>
-            <b>Project role:</b>
-            <span>Developer</span> <br>
-            <b>Project description:</b>
-            <span>Development of ACS modules</span> <br>
-          </h4>
-          <h4>
-            <span>September 2020 - December 2020 - RUE "Belgosles"</span> <br>
-            <b>Project role:</b>
-            <span>Developer</span> <br>
-            <b>Project description:</b>
-            <span>Development and revision of the program Reforestation</span> <br>
-          </h4>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="flex-item item-4">
-    <ul class="footer">
-      <li>
-        <a href="https://github.com/dima92">Github</a>
-        <span>
-          <script>
-            document.write(new Date().getFullYear() + "");
-          </script>
+<header class="header">
+  <div class="container">
+        <span class="header__hamburger hamburger">
+          <span class="hamburger__line"></span>
         </span>
-      </li>
-      <li>
-        <a href="https://rs.school/js/"><img src="assets/rs_school_js.svg" alt="Лого курса" class="logo"></a>
-      </li>
-    </ul>
-  </footer>
-</div>
+    <nav class="header__navigation">
+      <ul class="navigation navigation_hamburger">
+        <li><a href="#home" class="navigation__link active">Home</a></li>
+        <li><a href="#about" class="navigation__link active">About</a></li>
+        <li><a href="#skills" class="navigation__link active">Skills</a></li>
+        <li><a href="#code" class="navigation__link active">Code</a></li>
+        <li><a href="#education" class="navigation__link active">Education</a></li>
+        <li><a href="#language" class="navigation__link active">Language</a></li>
+        <li><a href="#contacts" class="navigation__link active">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <h1>Tkachenko Dmitry</h1>
+  <section class="home" id="home">
+    <div class="container home__container">
+      <img class="home__avatar" src="./assets/photo_2021-06-28_19-46-21.jpg" alt="Tkachenko Dmitry">
+      <div class="home__content">
+        <span class="home__gretting">Hello</span>
+        <h3 class="home__title">I'm Dmitry</h3>
+        <article class="home__information card card_colored">
+          <h3 class="home__text">const Name = {</h3>
+          <span class="home__text home__text_positon">First name: <span
+            class="home__text_colored">Tkachenko</span> ;</span>
+          <span class="home__text home__text_positon">Last Name: <span class="home__text_colored">Dmitry</span> ;</span>
+          <span class="home__text">}</span>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="title">About me</h2>
+      <div class="about__container">
+        <div class="about__content">
+          <p class="about__text">
+            I started learning JavaScript in JS / Front-end and ReactJS (with TypeScript) courses at
+            The Rolling Scopes School, while at university I studied more .NET and Angular. Now I am
+            developing my own projects, and I am ready to further develop my knowledge and skills in
+            web development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="title">Skills</h2>
+      <ul>
+        <li class="skill-menu__item">
+          <p class="skill-menu__item-text">HTML (70%)</p>
+          <div class="progressbar">
+            <span style="width: 70%"></span>
+          </div>
+        </li>
+        <li class="skill-menu__item">
+          <p class="skill-menu__item-text">CSS/SASS (70%)</p>
+          <div class="progressbar">
+            <span style="width: 70%"></span>
+          </div>
+        </li>
+        <li class="skill-menu__item">
+          <p class="skill-menu__item-text">JS (50%)</p>
+          <div class="progressbar">
+            <span style="width: 50%"></span>
+          </div>
+        </li>
+        <li class="skill-menu__item">
+          <p class="skill-menu__item-text">TS (50%)</p>
+          <div class="progressbar">
+            <span style="width: 50%"></span>
+          </div>
+        </li>
+        <li class="skill-menu__item">
+          <p class="skill-menu__item-text">Angular (50%)</p>
+          <div class="progressbar">
+            <span style="width: 50%"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="code" id="code">
+    <div class="container">
+      <h2 class="title">Code</h2>
+      <pre><code class="javascript">
+let count = 0
+
+function bubblesortOnce(a) {
+  a = [...a]
+  for (let i = 0; i &lt; a.length - 1; i++) {
+    if (a[i + 1] &lt; a[i]) {
+      let tmp = a[i]
+      a[i] = a[i + 1]
+      a[i + 1] = tmp
+    }
+    count += 1
+  }
+  return a
+}
+
+console.log(bubblesortOnce([9, 7, 5, 3, 1, 2, 4, 6, 8]));
+console.log(count)</code></pre>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <div class="container">
+      <h2 class="title">Education</h2>
+      <div class="education__container">
+        <article class="home__information card card_colored">
+          <h4 class="home__text">const University = {</h4>
+          <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Belarusian State University of Informatics and Radioelectronics'</span> ;</span>
+          <span class="home__text home__text_positon">Special: <span class="home__text_colored">'Information technology software'</span> ;</span>
+          <span class="home__text home__text_positon">Year: <span class="home__text_colored">'September 2011 - June 2019'</span> ;</span>
+          <span class="home__text">}</span>
+        </article>
+        <article class="home__information card card_colored">
+          <h5 class="home__text">const RS_school = {</h5>
+          <span class="home__text home__text_positon">Name: <span
+            class="home__text_colored">'The Rolling Scopes School'</span> ;</span>
+          <span class="home__text home__text_positon">Year: <span
+            class="home__text_colored">'July 2021 – present time'</span> ;</span>
+          <span class="home__text">}</span>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="language" id="language">
+    <div class="container">
+      <h2 class="title">Language</h2>
+      <article class="home__information card card_colored">
+        <h6 class="home__text">const language = {</h6>
+        <span class="home__text home__text_positon">English: <span class="home__text_colored">'A1+'</span> ;</span>
+        <span class="home__text">}</span>
+      </article>
+    </div>
+  </section>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="title">Contacts</h2>
+      <article class="home__information card card_colored">
+        <h6 class="home__text">const contacts = { </h6>
+        <ul class="contacts__lists">
+          <li class="home__text home__text_positon">Github: <span class="home__text_colored">'dima92'</span> ;</li>
+          <li class="home__text home__text_positon">Email: <span
+            class="home__text_colored">'dima-tkachenko@mail.ru'</span> ;
+          </li>
+          <li class="home__text home__text_positon">Linkedin: <span class="home__text_colored">'dima92'</span> ;</li>
+          <li class="home__text home__text_positon">VK: <span class="home__text_colored">'zloy_developer41'</span> ;
+          </li>
+        </ul>
+        <span class="home__text">}</span>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__container">
+    <a href="https://github.com/ChroMari/rsschool-cv" target="_blank">
+      <img class="footer__img" src="./assets/github.svg" alt="github">
+    </a>
+    <a href="https://rs.school/" target="_blank">
+      <img class="footer__img footer__img-rs" src="./assets/rs_school_js.svg" alt="RS_school">
+    </a>
+  </div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>
