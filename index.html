@@ -27,6 +27,7 @@
         <li><a href="#home" class="navigation__link active">Home</a></li>
         <li><a href="#about" class="navigation__link">About</a></li>
         <li><a href="#skills" class="navigation__link">Skills</a></li>
+        <li><a href="#projects" class="navigation__link">Projects</a></li>
         <li><a href="#code" class="navigation__link">Code</a></li>
         <li><a href="#education" class="navigation__link">Education</a></li>
         <li><a href="#language" class="navigation__link">Language</a></li>
@@ -36,38 +37,25 @@
   </div>
 </header>
 <main>
-  <h1>Tkachenko Dmitry</h1>
-  <section class="home" id="home">
-    <div class="container home__container">
-      <img class="home__avatar" src="./assets/photo_2021-06-28_19-46-21.jpg" alt="Tkachenko Dmitry">
-      <div class="home__content">
-        <span class="home__gretting">Hello</span>
-        <h3 class="home__title">I'm Dmitry</h3>
-        <article class="home__information card card_colored">
-          <h3 class="home__text">const Name = {</h3>
-          <span class="home__text home__text_positon">First name: <span
-            class="home__text_colored">Tkachenko</span> ;</span>
-          <span class="home__text home__text_positon">Last Name: <span class="home__text_colored">Dmitry</span> ;</span>
-          <span class="home__text">}</span>
-        </article>
+  <div class="flex-section">
+    <section class="home" id="home">
+      <div class="container home__container">
+        <h1>Tkachenko Dmitry</h1>
+        <img class="home__avatar" src="./assets/photo_2021-06-28_19-46-21.jpg" alt="Tkachenko Dmitry">
       </div>
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="title">About me</h2>
-      <div class="about__container">
-        <div class="about__content">
-          <p class="about__text">
-            I started learning JavaScript in JS / Front-end and ReactJS (with TypeScript) courses at
-            The Rolling Scopes School, while at university I studied more .NET and Angular. Now I am
-            developing my own projects, and I am ready to further develop my knowledge and skills in
-            web development.
-          </p>
-        </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="title">About me</h2>
+        <p class="about__text">
+          I started learning JavaScript in JS / Front-end and ReactJS (with TypeScript) courses at
+          The Rolling Scopes School, while at university I studied more .NET and Angular. Now I am
+          developing my own projects, and I am ready to further develop my knowledge and skills in
+          web development.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <section class="skills" id="skills">
     <div class="container">
       <h2 class="title">Skills</h2>
@@ -105,6 +93,60 @@
       </ul>
     </div>
   </section>
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="title">Projects</h2>
+      <div class="slider">
+        <div class="content">
+          <div id="inner1">
+            <div id="inner2">
+              <div id="inner3">
+                <div id="content-inner">
+                  <div class="page" id="page1">
+                    <a href="https://rolling-scopes-school.github.io/dima92-JSFEPRESCHOOL/drum-kit/"
+                       target="_blank"><img
+                      src="assets/drum-kit.png" alt="drum-kit"></a>
+                    <div class="page-info">
+                      <h2>Drum-Kit</h2>
+                      <div class="page-text">Музыкальное приложение</div>
+                    </div>
+                  </div>
+                  <div class="page" id="page2">
+                    <a href="https://rolling-scopes-school.github.io/dima92-JSFEPRESCHOOL/museum/" target="_blank"><img
+                      src="assets/museum.png" alt="museum"></a>
+                    <div class="page-info">
+                      <h2>Museum</h2>
+                      <div class="page-text">landing page Лувра</div>
+                    </div>
+                  </div>
+                  <div class="page" id="page3">
+                    <a href="https://rolling-scopes-school.github.io/dima92-JSFEPRESCHOOL/vertical-slider/"
+                       target="_blank"><img
+                      src="assets/vertical-slider.png" alt="vertical-slider"></a>
+                    <div class="page-info">
+                      <h2>Vertical Slider</h2>
+                      <div class="page-text">Вертикальный слайдер на JavaScript</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="bullet">
+          <li class="button">
+            <a href="#inner1"></a>
+          </li>
+          <li class="button">
+            <a href="#inner2"></a>
+          </li>
+          <li class="button">
+            <a href="#inner3"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <section class="code" id="code">
     <div class="container">
       <h2 class="title">Code</h2>
@@ -128,53 +170,51 @@ console.log(bubblesortOnce([9, 7, 5, 3, 1, 2, 4, 6, 8]));
 console.log(count)</code></pre>
     </div>
   </section>
-  <section class="education" id="education">
-    <div class="container">
-      <h2 class="title">Education</h2>
-      <div class="education__container">
+  <div class="flex-section">
+    <section class="education" id="education">
+      <div class="container">
+        <h2 class="title">Education</h2>
+        <div class="education__container">
+          <article class="home__information card card_colored">
+            <h4 class="home__text">University</h4>
+            <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Belarusian State University of Informatics and Radioelectronics'</span></span>
+            <span class="home__text home__text_positon">Special: <span class="home__text_colored">'Information technology software'</span></span>
+            <span class="home__text home__text_positon">Year: <span class="home__text_colored">'September 2011 - June 2019'</span></span>
+          </article>
+          <article class="home__information card card_colored">
+            <h5 class="home__text">RS_school</h5>
+            <span class="home__text home__text_positon">Name: <span
+              class="home__text_colored">'The Rolling Scopes School'</span></span>
+            <span class="home__text home__text_positon">Year: <span
+              class="home__text_colored">'July 2021 – present time'</span></span>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="language" id="language">
+      <div class="container">
+        <h2 class="title">Language</h2>
         <article class="home__information card card_colored">
-          <h4 class="home__text">const University = {</h4>
-          <span class="home__text home__text_positon">Name: <span class="home__text_colored">'Belarusian State University of Informatics and Radioelectronics'</span> ;</span>
-          <span class="home__text home__text_positon">Special: <span class="home__text_colored">'Information technology software'</span> ;</span>
-          <span class="home__text home__text_positon">Year: <span class="home__text_colored">'September 2011 - June 2019'</span> ;</span>
-          <span class="home__text">}</span>
-        </article>
-        <article class="home__information card card_colored">
-          <h5 class="home__text">const RS_school = {</h5>
-          <span class="home__text home__text_positon">Name: <span
-            class="home__text_colored">'The Rolling Scopes School'</span> ;</span>
-          <span class="home__text home__text_positon">Year: <span
-            class="home__text_colored">'July 2021 – present time'</span> ;</span>
-          <span class="home__text">}</span>
+          <h6 class="home__text">language</h6>
+          <span class="home__text home__text_positon">English: <span class="home__text_colored">'A1+'</span></span>
         </article>
       </div>
-    </div>
-  </section>
-  <section class="language" id="language">
-    <div class="container">
-      <h2 class="title">Language</h2>
-      <article class="home__information card card_colored">
-        <h6 class="home__text">const language = {</h6>
-        <span class="home__text home__text_positon">English: <span class="home__text_colored">'A1+'</span> ;</span>
-        <span class="home__text">}</span>
-      </article>
-    </div>
-  </section>
+    </section>
+  </div>
   <section class="contacts" id="contacts">
     <div class="container">
       <h2 class="title">Contacts</h2>
       <article class="home__information card card_colored">
-        <h6 class="home__text">const contacts = { </h6>
+        <h6 class="home__text">contacts</h6>
         <ul class="contacts__lists">
-          <li class="home__text home__text_positon">Github: <span class="home__text_colored">'dima92'</span> ;</li>
+          <li class="home__text home__text_positon">Github: <span class="home__text_colored">'dima92'</span></li>
           <li class="home__text home__text_positon">Email: <span
-            class="home__text_colored">'dima-tkachenko@mail.ru'</span> ;
+            class="home__text_colored">'dima-tkachenko@mail.ru'</span>
           </li>
-          <li class="home__text home__text_positon">Linkedin: <span class="home__text_colored">'dima92'</span> ;</li>
+          <li class="home__text home__text_positon">Linkedin: <span class="home__text_colored">'dima92'</span></li>
           <li class="home__text home__text_positon">VK: <span class="home__text_colored">'zloy_developer41'</span> ;
           </li>
         </ul>
-        <span class="home__text">}</span>
       </article>
     </div>
   </section>
@@ -184,6 +224,12 @@ console.log(count)</code></pre>
     <a href="https://github.com/dima92/rsschool-cv" target="_blank">
       <img class="footer__img" src="./assets/github.svg" alt="github">
     </a>
+    <p>
+      <script>
+        document.write(new Date().getFullYear() + "");
+        history.replaceState({}, document.title, window.location.href.split('?')[0]);
+      </script>
+    </p>
     <a href="https://rs.school/" target="_blank">
       <img class="footer__img footer__img-rs" src="./assets/rs_school_js.svg" alt="RS_school">
     </a>
