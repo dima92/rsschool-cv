@@ -1,3 +1,5 @@
+import {log} from './log.js'
+
 (function () {
   const header = document.querySelector('.header')
   window.onscroll = () => {
@@ -18,3 +20,5 @@ hamburger.addEventListener('click', () => {
   hamburgerLine.classList.toggle('hamburger__line_active')
   navigation.classList.toggle('navigation_hamburger-active')
 })
+
+log()
