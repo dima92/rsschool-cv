@@ -22,6 +22,84 @@ body {
   text-shadow: 4px 2px 0 rgb(0 0 0 / 20%);
 }
 
+main {
+  display: flex;
+  flex: 1;
+}
+
+aside {
+  flex: 1;
+}
+
+section {
+  flex: 3;
+}
+
+.summary {
+  font-style: oblique;
+  text-align: justify;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:hover, a:active, a:visited, a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+.section__contact {
+  font-size: 15px;
+  font-style: italic;
+  text-decoration: none;
+  color: honeydew;
+  text-shadow: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.education {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.skills ul:first-line {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.photo {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.logo {
+  width: 5em;
+  border: 1px solid black;
+  float: right;
+  bottom: 0;
+  right: 0;
+}
+
 .item-1 {
   background-image: linear-gradient(45deg, #ff8177, #cf556c);
 }
